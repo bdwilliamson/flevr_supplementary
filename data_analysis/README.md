@@ -12,13 +12,14 @@ The R scripts contain the code necessary to do assess the performance of the var
 * `03_prediction_performance.R`: assess the prediction performance of a set of selected variables
 * `04_run_analysis.R`: run a single replication of the cross-validated performance estimation procedure
 * `05_main.R`: run many replicates of the procedure in `04_run_analysis.R`
+* `05_final_selected_vars.R`: obtain the final set of selected variables
 * `06_compile_results.R`: compile many sets of results
 * `07_create_plots.R`: create plots and tables with output
 
 The bash scripts run the analysis and compile results:
 * `submit_analysis.sh`: submit an analysis for a given procedure
-* `submit_analyses.sh`: submit the prediction performance analysis for all procedures
-* `submit_final-selection_analyses.sh`: submit the final variable selection analysis for each procedure
+* `submit_intrinsic_analyses.sh`: submit the prediction performance analysis for all procedures
+* `submit_intrinsic_final-selection_analyses.sh`: submit the final variable selection analysis for each procedure
 
 Running the following code will submit all of the simulations to a Slurm scheduler:
 ```{bash}
